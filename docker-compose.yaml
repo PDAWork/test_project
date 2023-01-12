@@ -4,6 +4,22 @@ version: '3.1'
 # db : 6101
 
 services:
+  db:
+    container_name: db
+    ports:
+      - "6101:6101"
+    environment:
+      - POSTGRES_PASSWORD=root
+      - POSTGRES_USER=admin
+    image: postgres:14.3-alpine
+    command:
+      - "postgres"
+      - "-c"
+      - "port=6101"
+    volumes:
+      - db_vol:/var/lib/postgresql/data/
+    networks:
+      - internal_net
   backend:
     build: ./
     container_name: backend
@@ -22,22 +38,7 @@ services:
     networks:
       - internal_net
 
-  db:
-    container_name: db
-    ports:
-      - "6101:6101"
-    environment:
-      - POSTGRES_PASSWORD=root
-      - POSTGRES_USER=admin
-    image: postgres:14.3-alpine
-    command:
-      - "postgres"
-      - "-c"
-      - "port=6101"
-    volumes:
-      - db_vol:/var/lib/postgresql/data/
-    networks:
-      - internal_net
+  
 
 volumes:
   db_vol: {}
