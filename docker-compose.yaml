@@ -1,0 +1,47 @@
+version: '3.1'
+
+# backend : 6100
+# db : 6101
+
+services:
+  backend:
+    build: ./
+    container_name: backend
+    ports:
+      - 6100:6100
+    environment:
+      - SECRET_KEY=SECRET_KEY
+      - PORT=6100
+      - DB_USERNAME=admin
+      - DB_PASSWORD=root
+      - DB_HOST=db
+      - DB_PORT=6101
+      - DB_NAME=postgres
+    depends_on:
+      - db
+    networks:
+      - internal_net
+
+  db:
+    container_name: db
+    ports:
+      - "6101:6101"
+    environment:
+      - POSTGRES_PASSWORD=root
+      - POSTGRES_USER=admin
+    image: postgres:14.3-alpine
+    command:
+      - "postgres"
+      - "-c"
+      - "port=6101"
+    volumes:
+      - db_vol:/var/lib/postgresql/data/
+    networks:
+      - internal_net
+
+volumes:
+  db_vol: {}
+
+networks:
+  internal_net:
+    driver: bridge
