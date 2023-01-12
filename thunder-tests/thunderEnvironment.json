@@ -1,0 +1,17 @@
+[
+  {
+    "_id": "362a7527-5f7a-4ecf-80b9-5f0ea40a40f7",
+    "name": "(Global Env)",
+    "default": false,
+    "global": true,
+    "sortNum": -1,
+    "created": "2022-06-28T14:18:15.713Z",
+    "modified": "2022-07-10T19:15:48.277Z",
+    "data": [
+      {
+        "name": "token",
+        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTc0ODQxMTAsImlhdCI6MTY1NzQ4MDUxMCwiaWQiOjN9.hKey9jvpPaeSUFFdsTXLc74N6DGaPR98Uz3wQRPf0fweyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTc0ODQxMTAsImlhdCI6MTY1NzQ4MDUxMCwiaWQiOjN9.hKey9jvpPaeSUFFdsTXLc74N6DGaPR98Uz3wQRPf0fw"
+      }
+    ]
+  }
+]

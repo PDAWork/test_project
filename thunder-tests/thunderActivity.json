@@ -1,0 +1,124 @@
+[
+  {
+    "_id": "b941d1c8-4888-4640-8ea4-ca4d0f88b0d4",
+    "colId": "history",
+    "containerId": "",
+    "name": "signIn",
+    "url": "localhost:6100/token",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2022-06-23T14:49:12.754Z",
+    "modified": "2022-07-10T19:30:38.354Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n    \"password\":\"username2221423\",\n    \"username\":\"username2221423\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "de1bf8ce-57d5-49a6-a710-ec84717baa1d",
+    "colId": "history",
+    "containerId": "",
+    "name": "signUp",
+    "url": "localhost:6100/token",
+    "method": "PUT",
+    "sortNum": 0,
+    "created": "2022-06-23T14:49:12.754Z",
+    "modified": "2022-07-10T19:14:46.653Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n    \"password\":\"username2221423\",\n    \"username\":\"username2221423\",\n    \"email\":\"u221243\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "10617574-dd5d-417b-ace6-bb83b2c6d4dd",
+    "colId": "history",
+    "containerId": "",
+    "name": "refresh",
+    "url": "localhost:8080/token/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTYwOTI5OTEsImlhdCI6MTY1NjAwNjU5MSwiaWQiOjF9.Q6yMIc7WTE0QjnDgbXGVJV4eQY4cMgba9dsSj5TJpQE",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2022-06-23T14:49:12.754Z",
+    "modified": "2022-06-23T17:49:59.471Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "84b6a255-2a5c-44d7-9bad-97ec3a352950",
+    "colId": "history",
+    "containerId": "",
+    "name": "user",
+    "url": "localhost:6100/user",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-06-23T14:49:12.754Z",
+    "modified": "2022-07-10T19:30:56.370Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTc0ODUwMzgsImlhdCI6MTY1NzQ4MTQzOCwiaWQiOjN9.o92N4PJU0wCXgSwVCvAx_EhLC-HSC0y4MgcmDyZaLUY"
+    },
+    "tests": []
+  },
+  {
+    "_id": "f05ccb4d-0ff4-452b-9c32-1d309609fa93",
+    "colId": "history",
+    "containerId": "",
+    "name": "user update",
+    "url": "localhost:6100/user",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2022-06-23T14:49:12.754Z",
+    "modified": "2022-07-10T19:17:30.150Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n    \"username\":\"newUsername\",\n    \"email\":\"newEmail\"\n}",
+      "form": []
+    },
+    "auth": {
+      "type": "bearer",
+      "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTYzMjQ4NTAsImlhdCI6MTY1NjMyMTI1MCwiaWQiOjF9.ERE3zQlDrRMRcDghUirtKWZrT4YiRAHSmf9ewMhVSiA"
+    },
+    "tests": []
+  },
+  {
+    "_id": "1353009c-6dc5-4df8-a06c-b1f11fed5a81",
+    "colId": "history",
+    "containerId": "",
+    "name": "user password update",
+    "url": "localhost:8080/user?oldPassword=newPassword&newPassword=newPassword2",
+    "method": "PUT",
+    "sortNum": 0,
+    "created": "2022-06-23T14:49:12.754Z",
+    "modified": "2022-06-28T14:23:41.577Z",
+    "headers": [],
+    "params": [
+      {
+        "name": "oldPassword",
+        "value": "newPassword",
+        "isPath": false
+      },
+      {
+        "name": "newPassword",
+        "value": "newPassword2",
+        "isPath": false
+      }
+    ],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  }
+]

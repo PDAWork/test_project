@@ -1,12 +1,15 @@
-version: '3.1'
+version: '3.5'
 
-# backend : 6100
-# db : 6101
+# 6100 - auth
+# 6101 - db_auth
+# 6200 - data
+# 6201 - db_data
 
 services:
-  backend:
-    build: ./
-    container_name: backend
+
+  auth:
+    build: ./auth
+    container_name: auth
     ports:
       - 6100:6100
     environment:
@@ -14,16 +17,16 @@ services:
       - PORT=6100
       - DB_USERNAME=admin
       - DB_PASSWORD=root
-      - DB_HOST=db
+      - DB_HOST=db_auth
       - DB_PORT=6101
       - DB_NAME=postgres
     depends_on:
-      - db
+      - db_auth
     networks:
       - internal_net
 
-  db:
-    container_name: db
+  db_auth:
+    container_name: db_auth
     ports:
       - "6101:6101"
     environment:
@@ -35,12 +38,12 @@ services:
       - "-c"
       - "port=6101"
     volumes:
-      - db_vol:/var/lib/postgresql/data/
+      - db_auth_vol:/var/lib/postgresql/data/
     networks:
       - internal_net
 
 volumes:
-  db_vol: {}
+  db_auth_vol: {}
 
 networks:
   internal_net:
