@@ -27,11 +27,11 @@ class AppService extends ApplicationChannel {
         .link(() => AppUserConttolelr(managedContext));
 
   PersistentStore _initDatabase() {
-    final username = Platform.environment['DB_USERNAME'] ?? 'postgres';
-    final password = Platform.environment['DB_PASSWORD'] ?? 'lecnoe2002';
-    final host = Platform.environment['DB_USERNAME'] ?? '127.0.0.1';
-    final port = int.parse(Platform.environment['DB_USERNAME'] ?? '5432');
-    final databaseName = Platform.environment['DB_NAME'] ?? 'postgres';
+    final username = Platform.environment['DB_USERNAME'];
+    final password = Platform.environment['DB_PASSWORD'];
+    final host = Platform.environment['DB_HOST'];
+    final port = int.parse(Platform.environment['DB_PORT'] ?? '0');
+    final databaseName = Platform.environment['DB_NAME'];
     return PostgreSQLPersistentStore(
         username, password, host, port, databaseName);
   }
