@@ -1,5 +1,5 @@
-username: "postgres"
-password: "lecnoe2002"
-host: "localhost"
-port: 5432
+username: "admin"
+password: "root"
+host: db
+port: 6101
 databaseName: "postgres"
