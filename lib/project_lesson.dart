@@ -1,9 +1,9 @@
 import 'dart:io';
 
 import 'package:conduit/conduit.dart';
-import 'package:test_project/contollers/app_auth_contoller.dart';
-import 'package:test_project/contollers/app_token_contoller.dart';
-import 'package:test_project/contollers/app_user_contoller.dart';
+import 'package:project_lesson/contollers/app_auth_contoller.dart';
+import 'package:project_lesson/contollers/app_token_contoller.dart';
+import 'package:project_lesson/contollers/app_user_contoller.dart';
 
 class AppService extends ApplicationChannel {
   late final ManagedContext managedContext;

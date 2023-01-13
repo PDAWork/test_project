@@ -1,9 +1,9 @@
 import 'dart:io';
 
 import 'package:conduit/conduit.dart';
-import 'package:test_project/model/user.dart';
-import 'package:test_project/utils/app_response.dart';
-import 'package:test_project/utils/app_utils.dart';
+import 'package:project_lesson/model/user.dart';
+import 'package:project_lesson/utils/app_response.dart';
+import 'package:project_lesson/utils/app_utils.dart';
 
 class AppUserConttolelr extends ResourceController {
   AppUserConttolelr(this.managedContext);

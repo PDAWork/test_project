@@ -2,9 +2,9 @@ import 'dart:async';
 import 'dart:io';
 
 import 'package:conduit/conduit.dart';
+import 'package:project_lesson/utils/app_const.dart';
+import 'package:project_lesson/utils/app_response.dart';
 import 'package:jaguar_jwt/jaguar_jwt.dart';
-import 'package:test_project/utils/app_const.dart';
-import 'package:test_project/utils/app_response.dart';
 
 class AppTokenContoller extends Controller {
   @override

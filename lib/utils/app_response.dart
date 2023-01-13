@@ -1,6 +1,6 @@
 import 'package:conduit/conduit.dart';
+import 'package:project_lesson/model/model_response.dart';
 import 'package:jaguar_jwt/jaguar_jwt.dart';
-import 'package:test_project/model/model_response.dart';
 
 class AppResponse extends Response {
 

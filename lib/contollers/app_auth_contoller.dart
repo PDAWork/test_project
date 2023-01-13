@@ -1,10 +1,10 @@
 import 'dart:io';
 
 import 'package:conduit/conduit.dart';
+import 'package:project_lesson/model/model_response.dart';
+import 'package:project_lesson/model/user.dart';
+import 'package:project_lesson/utils/app_utils.dart';
 import 'package:jaguar_jwt/jaguar_jwt.dart';
-import 'package:test_project/model/model_response.dart';
-import 'package:test_project/model/user.dart';
-import 'package:test_project/utils/app_utils.dart';
 
 class AppAuthContoler extends ResourceController {
   AppAuthContoler(this.managedContext);

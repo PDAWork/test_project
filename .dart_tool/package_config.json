@@ -111,7 +111,7 @@
     },
     {
       "name": "coverage",
-      "rootUri": "file:///C:/Users/isip_/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/coverage-1.6.1",
+      "rootUri": "file:///C:/Users/isip_/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/coverage-1.6.2",
       "packageUri": "lib/",
       "languageVersion": "2.15"
     },
@@ -189,9 +189,9 @@
     },
     {
       "name": "mime",
-      "rootUri": "file:///C:/Users/isip_/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/mime-1.0.3",
+      "rootUri": "file:///C:/Users/isip_/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/mime-1.0.4",
       "packageUri": "lib/",
-      "languageVersion": "2.12"
+      "languageVersion": "2.18"
     },
     {
       "name": "node_preamble",
@@ -333,19 +333,19 @@
     },
     {
       "name": "test",
-      "rootUri": "file:///C:/Users/isip_/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/test-1.22.1",
+      "rootUri": "file:///C:/Users/isip_/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/test-1.22.2",
       "packageUri": "lib/",
       "languageVersion": "2.18"
     },
     {
       "name": "test_api",
-      "rootUri": "file:///C:/Users/isip_/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/test_api-0.4.17",
+      "rootUri": "file:///C:/Users/isip_/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/test_api-0.4.18",
       "packageUri": "lib/",
       "languageVersion": "2.18"
     },
     {
       "name": "test_core",
-      "rootUri": "file:///C:/Users/isip_/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/test_core-0.4.21",
+      "rootUri": "file:///C:/Users/isip_/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/test_core-0.4.22",
       "packageUri": "lib/",
       "languageVersion": "2.18"
     },
@@ -369,7 +369,7 @@
     },
     {
       "name": "vm_service",
-      "rootUri": "file:///C:/Users/isip_/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/vm_service-9.4.0",
+      "rootUri": "file:///C:/Users/isip_/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/vm_service-10.0.0",
       "packageUri": "lib/",
       "languageVersion": "2.15"
     },
@@ -381,7 +381,7 @@
     },
     {
       "name": "web_socket_channel",
-      "rootUri": "file:///C:/Users/isip_/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/web_socket_channel-2.2.0",
+      "rootUri": "file:///C:/Users/isip_/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/web_socket_channel-2.3.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -398,13 +398,13 @@
       "languageVersion": "2.12"
     },
     {
-      "name": "test_project",
+      "name": "project_lesson",
       "rootUri": "../",
       "packageUri": "lib/",
       "languageVersion": "2.18"
     }
   ],
-  "generated": "2023-01-12T09:56:09.489508Z",
+  "generated": "2023-01-12T21:10:38.988838Z",
   "generator": "pub",
   "generatorVersion": "2.18.6"
 }
