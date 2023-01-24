@@ -6,7 +6,7 @@ publish_to: none
 environment:
   sdk: ">=2.18.0 <3.0.0"
 
-dev_dependencies:
+dependencies:
   conduit: ^4.1.6
   test: ^1.16.5
   jaguar_jwt: ^3.0.0

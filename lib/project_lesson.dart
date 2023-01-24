@@ -1,9 +1,13 @@
+import 'dart:async';
 import 'dart:io';
 
 import 'package:conduit/conduit.dart';
-import 'package:project_lesson/contollers/app_auth_contoller.dart';
-import 'package:project_lesson/contollers/app_token_contoller.dart';
-import 'package:project_lesson/contollers/app_user_contoller.dart';
+import 'package:project_lesson/controllers/app_auth_controller.dart';
+import 'package:project_lesson/controllers/app_post_controller.dart';
+import 'package:project_lesson/controllers/app_token_controller.dart';
+import 'package:project_lesson/controllers/app_user_controller.dart';
+import 'model/author.dart';
+import 'model/post.dart';
 
 class AppService extends ApplicationChannel {
   late final ManagedContext managedContext;
@@ -20,18 +24,21 @@ class AppService extends ApplicationChannel {
   @override
   Controller get entryPoint => Router()
     ..route('token/[:refresh]').link(
-      () => AppAuthContoler(managedContext),
+      () => AppAuthController(managedContext),
     )
     ..route('user')
-        .link(AppTokenContoller.new)!
-        .link(() => AppUserConttolelr(managedContext));
+        .link(AppTokenController.new)!
+        .link(() => AppUserController(managedContext))
+    ..route('post/[:id]')
+        .link(AppTokenController.new)!
+        .link(() => AppPostController(managedContext));
 
   PersistentStore _initDatabase() {
-    final username = Platform.environment['DB_USERNAME'];
-    final password = Platform.environment['DB_PASSWORD'];
-    final host = Platform.environment['DB_HOST'];
-    final port = int.parse(Platform.environment['DB_PORT'] ?? '0');
-    final databaseName = Platform.environment['DB_NAME'];
+    final username = Platform.environment['DB_USERNAME'] ?? 'admin';
+    final password = Platform.environment['DB_PASSWORD'] ?? 'root';
+    final host = Platform.environment['DB_HOST'] ?? '127.0.0.1';
+    final port = int.parse(Platform.environment['DB_PORT'] ?? '6101');
+    final databaseName = Platform.environment['DB_NAME'] ?? 'postgres';
     return PostgreSQLPersistentStore(
         username, password, host, port, databaseName);
   }
